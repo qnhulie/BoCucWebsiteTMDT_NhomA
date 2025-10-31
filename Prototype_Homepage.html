@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Buddy - Homepage Wireframe</title>
 </head>
+
 <body style="font-family: Arial; margin:0; background-color:#f9f9f9;">
 
   <!-- Header -->
-  <header style="display:flex; justify-content:space-between; align-items:center; padding:10px 30px; background-color:#ddd; border-bottom:2px solid #ccc;">
-    <div style="font-weight:bold;">[LOGO]</div>
+  <header
+    style="display:flex; justify-content:space-between; align-items:center; padding:10px 30px; background-color:#ddd; border-bottom:2px solid #ccc;">
+    <div style="font-weight:bold;">[LOGO AI BUDDY]</div>
+
     <nav>
       <a href="Prototype_Homepage.html" style="margin-right:15px;">Home</a>
       <a href="Prototype_Chatbot.html" style="margin-right:15px;">Chatbot</a>
       <a href="Prototype_EmotionTracker.html" style="margin-right:15px;">Emotion Tracker</a>
       <a href="Prototype_Focus.html" style="margin-right:15px;">Focus</a>
       <a href="Prototype_Profile.html" style="margin-right:15px;">Profile</a>
-      <a href="Prototype_About.html">About</a>
+      <a href="Prototype_About.html" style="margin-right:15px;">About</a>
+      <a href="Prototype_Contact.html">Contact</a>
     </nav>
-    <button style="padding:5px 10px;">Sign In</button>
+
+    <div>
+      <a href="Prototype_Cart.html" style="margin-right:15px;">Cart</a>
+      <a href="Prototype_Checkout.html" style="margin-right:15px;">Checkout</a>
+      <button style="padding:5px 10px;">Sign In</button>
+    </div>
   </header>
 
   <!-- Hero Banner -->
-  <section style="border:2px dashed #aaa; margin:20px 30px; height:250px; display:flex; align-items:center; justify-content:center; background-color:#eee;">
-    [Hero Banner Image: Giới thiệu AI Buddy + CTA “Bắt đầu trò chuyện ngay”]
+  <section
+    style="border:2px dashed #aaa; margin:20px 30px; height:250px; display:flex; flex-direction:column; align-items:center; justify-content:center; background-color:#eee;">
+    [Hero Banner Image: AI Buddy - Your Mental Health Companion]
+    <a href="Prototype_Chatbot.html">
+      <button style="padding:5px 10px; margin-top:10px;">Start Chatting Now</button>
+    </a>
   </section>
+
 
   <!-- Main content layout -->
   <main style="display:flex; gap:20px; margin:0 30px;">
@@ -32,12 +47,13 @@
     <div style="flex:2;">
       <!-- Giới thiệu nhanh -->
       <div style="border:1px solid #aaa; padding:10px; margin-bottom:15px; background:#fff;">
-        <h3>[Giới thiệu tính năng nổi bật]</h3>
-        <p>AI Buddy - Chatbot đồng hành giúp theo dõi cảm xúc, thư giãn, và đề xuất giải pháp cải thiện sức khỏe tinh thần.</p>
+        <h3>[Key Features of AI Buddy]</h3>
+        <p>AI Buddy is a companion chatbot that helps you track emotions, relax, and suggests solutions to improve your
+          mental health comprehensively.</p>
         <ul>
-          <li>[Tính năng 1: Chat cảm xúc NLP]</li>
-          <li>[Tính năng 2: Ghi nhật ký cảm xúc]</li>
-          <li>[Tính năng 3: Đề xuất Gói Focus/Meditation]</li>
+          <li><b>NLP Emotion Chat:</b> Natural conversation with intelligent AI that understands your feelings</li>
+          <li><b>Emotion Journaling:</b> Track and analyze your daily moods</li>
+          <li><b>Focus/Meditation Recommendations:</b> Personalized relaxation and focus exercises tailored for you</li>
         </ul>
       </div>
 
@@ -45,10 +61,11 @@
       <div style="border:1px solid #aaa; padding:10px; margin-bottom:15px; background:#fff;">
         <div style="display:flex; justify-content:space-between;">
           <div style="width:60%; height:125px">
-            <h4>[Chatbot cảm xúc]</h4>
-            <p>Mô phỏng trò chuyện tự nhiên bằng NLP – hỗ trợ voice guidance nhẹ.</p>
+            <h4>[Emotion Chatbot]</h4>
+            <p>Experience natural conversation with advanced NLP technology. AI Buddy not only listens but understands
+              your emotions, providing helpful advice and immediate support when you need it.</p>
           </div>
-          <div style="width:35%; border:1px dashed #999; text-align:center;">[Ảnh minh họa Chat UI]</div>
+          <div style="width:35%; border:1px dashed #999; text-align:center;">[Friendly Chat UI]</div>
         </div>
       </div>
 
@@ -56,9 +73,10 @@
         <div style="display:flex; justify-content:space-between;">
           <div style="width:60%; height:125px">
             <h4>[Emotion Tracker]</h4>
-            <p>Ghi lại tâm trạng mỗi ngày - hiển thị biểu đồ cảm xúc theo tuần/tháng.</p>
+            <p>Record your daily moods and view your emotion charts by week and month. Analyze emotional trends to help
+              you identify factors affecting your mental state.</p>
           </div>
-          <div style="width:35%; border:1px dashed #999; text-align:center;">[Mood Chart]</div>
+          <div style="width:35%; border:1px dashed #999; text-align:center;">[Visual Mood Chart]</div>
         </div>
       </div>
 
@@ -66,9 +84,10 @@
         <div style="display:flex; justify-content:space-between;">
           <div style="width:60%; height:125px">
             <h4>[Focus / Meditation]</h4>
-            <p>Mini session hít thở/thiền - có voice guidance và animation breathing circle.</p>
+            <p>Join short focus and meditation sessions with voice guidance and breathing animations. Reduce stress and
+              enhance concentration in just a few minutes each day.</p>
           </div>
-          <div style="width:35%; border:1px dashed #999; text-align:center;">[Breathing Animation]</div>
+          <div style="width:35%; border:1px dashed #999; text-align:center;">[Relaxing Breathing Animation]</div>
         </div>
       </div>
     </div>
@@ -76,38 +95,42 @@
     <!-- Right column -->
     <aside style="flex:1;">
       <div style="border:1px solid #aaa; padding:10px; background:#fff; margin-bottom:15px;">
-        <h4>[Perks]</h4>
-        <p>Chúng tôi ở đây để giúp bạn:</p>
+        <h4>[Benefits]</h4>
+        <p>We're here to help you:</p>
         <ul>
-          <li>Nhận nhắc nhở focus hàng ngày</li>
-          <li>Lưu trữ nhật ký cảm xúc</li>
-          <li>Có voice coach cá nhân</li>
+          <li>Receive daily focus and relaxation reminders</li>
+          <li>Securely store your emotion journal</li>
+          <li>Access personalized virtual coaching</li>
+          <li>Track your mental health improvement progress</li>
+          <li>Access a rich library of exercises</li>
         </ul>
       </div>
 
       <div style="border:1px solid #aaa; padding:10px; background:#fff; margin-bottom:15px;">
-        <h4>[Subscription / Buy Focus Pack]</h4>
-        <p>Trải nghiệm bản nâng cao của Focus Session</p>
+        <h4>[Enhanced Experience]</h4>
+        <p>Experience the premium version with exclusive features and premium content in Focus Sessions.</p>
         <a href="Prototype_Focus.html">
-          <button style="padding:5px 10px;">Xem chi tiết</button>
+          <button style="padding:5px 10px;">View Premium Package Details</button>
         </a>
       </div>
 
       <div style="border:1px solid #aaa; padding:15px; background:#fff;">
-        <h4>[FAQ]</h4>
-        <p><b>Câu hỏi thường gặp</b></p>
-        
+        <h4>[Frequently Asked Questions]</h4>
+
         <div style="margin-bottom:10px;">
-          <p><b>Q1:</b> AI Buddy là gì? </p>
-          <p><b>Q2:</b> Focus Session có cần đăng nhập không? </p>
+          <p><b>Q1:</b> What is AI Buddy? </p>
+          <p>AI Buddy is a mental health support application that uses artificial intelligence to listen, understand,
+            and accompany you on your mental wellness journey.</p>
+          <p><b>Q2:</b> Do I need to log in for Focus Sessions? </p>
+          <p>You can try some basic features without logging in, but to save your progress and access all features, you
+            need to create an account.</p>
         </div>
 
-          <p><b>Gửi câu hỏi của bạn</b></p>
-          <textarea placeholder="[Nhập câu hỏi của bạn]" 
-                    style="width:100%; height:30px; border:1px dashed #ccc; background:#f9f9f9; padding:5px;"></textarea><br>
-          <div style="border:1px solid #999; width:80px; text-align:center; margin-top:8px; padding:5px; background:#eee;">
-            Gửi
-          </div>
+        <p><b>Send us your question</b></p>
+        <textarea placeholder="[Enter your question]"
+          style="width:100%; height:30px; border:1px dashed #ccc; background:#f9f9f9; padding:5px;"></textarea><br>
+        <button style="padding:5px 10px; margin-top:10px;">Send</button>
+
       </div>
 
     </aside>
@@ -115,8 +138,9 @@
 
   <!-- Footer -->
   <footer style="margin-top:30px; background:#ddd; text-align:center; padding:10px;">
-    [Thông tin nhóm | Contact | &#169; 2025 AI Buddy]
+    [ &#169; 2025 AI Buddy. All rights reserved. | Group A Information | Contact ]
   </footer>
 
 </body>
+
 </html>
