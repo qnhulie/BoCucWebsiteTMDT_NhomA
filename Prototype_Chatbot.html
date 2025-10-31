@@ -1,67 +1,97 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Buddy - Chatbot</title>
 </head>
+
 <body style="font-family:Arial; margin:0; background:#f9f9f9;">
 
-  <header style="display:flex; justify-content:space-between; align-items:center; padding:10px 30px; background-color:#ddd; border-bottom:2px solid #ccc;">
-    <div style="font-weight:bold;">[LOGO]</div>
+  <header
+    style="display:flex; justify-content:space-between; align-items:center; padding:10px 30px; background-color:#ddd; border-bottom:2px solid #ccc;">
+    <div style="font-weight:bold;">[LOGO AI BUDDY]</div>
+
     <nav>
       <a href="Prototype_Homepage.html" style="margin-right:15px;">Home</a>
       <a href="Prototype_Chatbot.html" style="margin-right:15px;">Chatbot</a>
       <a href="Prototype_EmotionTracker.html" style="margin-right:15px;">Emotion Tracker</a>
       <a href="Prototype_Focus.html" style="margin-right:15px;">Focus</a>
       <a href="Prototype_Profile.html" style="margin-right:15px;">Profile</a>
-      <a href="Prototype_About.html">About</a>
+      <a href="Prototype_About.html" style="margin-right:15px;">About</a>
+      <a href="Prototype_Contact.html">Contact</a>
     </nav>
+
+    <div>
+      <a href="Prototype_Cart.html" style="margin-right:15px;">Cart</a>
+      <a href="Prototype_Checkout.html" style="margin-right:15px;">Checkout</a>
+      <button style="padding:5px 10px;">Sign In</button>
+    </div>
   </header>
 
-  <section style="margin:20px 30px; border:2px dashed #aaa; height:100px; display:flex; align-items:center; justify-content:center;">
-    [Banner Chatbot – “Trò chuyện cùng AI Buddy hôm nay nhé!”]
+  <section
+    style="margin:20px 30px; border:2px dashed #aaa; height:100px; display:flex; align-items:center; justify-content:center;">
+    [Banner Chatbot – “Chat with AI Buddy today!”]
   </section>
 
   <main style="display:flex; gap:20px; margin:0 30px;">
+    <!-- Sidebar Left: Chat History -->
+    <aside style="flex:1; border:1px solid #aaa; padding:10px; background:#fff;">
+      <h4>[Chat History]</h4>
+      <ul style="list-style:none; padding:0;">
+        <li style="margin-bottom:8px; border:1px solid #ccc; border-radius:6px; padding:8px;">😔 Felt a bit sad
+          yesterday</li>
+        <li style="margin-bottom:8px; border:1px solid #ccc; border-radius:6px; padding:8px;">📚 How to focus for exams
+        </li>
+        <li style="margin-bottom:8px; border:1px solid #ccc; border-radius:6px; padding:8px;">💬 New Conversation</li>
+        <li style="margin-bottom:8px; border:1px solid #ccc; border-radius:6px; padding:8px;">👥 Peer Pressure</li>
+      </ul>
+      <button style="padding:5px 10px; width:100%;">+ New Chat</button>
+    </aside>
+
     <!-- Chatbox -->
     <div style="flex:3; border:1px solid #aaa; padding:15px; background:#fff;">
       <div style="border:1px dashed #999; height:350px; margin-bottom:10px; text-align:center;">
-        [Khung trò chuyện – Bong bóng hội thoại AI & người dùng, mô phỏng NLP + cảm xúc]
+        [Chatbox - AI & user dialogue bubbles simulating NLP and emotions]
       </div>
-      <input type="text" placeholder="[Ô nhập tin nhắn]" style="width:80%; padding:5px;">
+      <input type="text" placeholder="Type your message..." style="width:75%; padding:5px;">
       <button>Gửi</button>
       <button>&#127908; Voice Mode</button>
-      <p style="margin-top:10px; font-size:13px;">💬 *Voice Guidance: “Take a deep breath”, “You’ve done well today”*</p>
+      <p style="margin-top:10px; font-size:13px;">💬 *Voice Guidance: “Take a deep breath”, “You’ve done well today”*
+      </p>
     </div>
 
-    <!-- Sidebar: Persona & Gợi ý -->
+    <!-- Sidebar: Persona & Recommendation -->
     <aside style="flex:1; border:1px solid #aaa; padding:10px; background:#fff;">
-      <h4>[Chọn vai trò AI Persona]</h4>
+      <h4>[Choose AI Persona]</h4>
       <ul>
-        <li>&#128105;&#8205;&#127979; Thầy/Cô</li>
-        <li>&#128104;&#8205;&#128105;&#8205;&#128103;&#8205;&#128102; Ba/Mẹ</li>
-        <li>&#129489;&#8205;&#129489; Bạn bè</li>
-        <li>&#128105;&#8205;&#10084;&#8205;&#128104; Người yêu</li>
-        <li>&#128105;&#8205;&#9877;&#65039; Bác sĩ tâm lý</li>
-        <li>&#128104;&#8205;&#128187; Đồng nghiệp</li>
+        <li>&#128105;&#8205;&#127979; Lecturer</li>
+        <li>&#128104;&#8205;&#128105;&#8205;&#128103;&#8205;&#128102; Parents</li>
+        <li>&#129489;&#8205;&#129489; Friend</li>
+        <li>&#128105;&#8205;&#10084;&#8205;&#128104; Lover</li>
+        <li>&#128105;&#8205;&#9877;&#65039; Psychologist</li>
+        <li>&#128104;&#8205;&#128187; Career Mentor</li>
       </ul>
 
-      <h4>[Gợi ý chủ đề]</h4>
+      <h4>[Topic Suggestions]</h4>
       <ul>
-        <li>Tâm trạng hôm nay</li>
-        <li>Áp lực học tập</li>
-        <li>Động lực làm việc</li>
-        <li>Quan hệ bạn bè</li>
+        <li>Today's mood</li>
+        <li>Study pressure</li>
+        <li>Work motivation</li>
+        <li>Relationships</li>
+        <li>Ways to relax</li>
       </ul>
 
-      <button>Áp dụng</button>
+      <button>Apply</button>
     </aside>
   </main>
 
   <!-- Footer -->
   <footer style="margin-top:30px; background:#ddd; text-align:center; padding:10px;">
-    [Thông tin nhóm | Contact | &#169; 2025 AI Buddy]
+    [ &#169; 2025 AI Buddy. All rights reserved. | Group A Information | Contact ]
   </footer>
+
 </body>
+
 </html>
