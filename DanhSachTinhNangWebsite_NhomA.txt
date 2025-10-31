@@ -1,0 +1,132 @@
+MÔN HỌC: PHÁT TRIỂN ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ
+Đề tài: PHÁT TRIỂN WEBSITE DỊCH VỤ A.I HỖ TRỢ SỨC KHỎE TINH THẦN SINH VIÊN 
+
+Giảng viên: TS. Nguyễn Hoàng Huy
+Mã học phần: 25C1INF50902703
+Khóa - Lớp: K49 - EEP001
+
+DANH SÁCH NHÓM A
+1. Đặng Nguyễn Phương Anh - 31231027548
+2. Nguyễn Trần Tiến Đạt - 31231027217
+3. Phạm Trọng Nguyên - 31231026008
+4. Đinh Thị Quỳnh Như - 31231025829
+5. Nguyễn Thị Trúc Quỳnh - 31231021679
+
+----BÁO CÁO BỐ CỤC WEBSITE TMĐT----
+
+I.	GIỚI THIỆU
+Trong bối cảnh hiện đại, sức khỏe tinh thần ngày càng đóng vai trò quan trọng trong đời sống sinh viên và người trẻ. Căng thẳng học tập, áp lực xã hội, thiếu định hướng cá nhân và tác động từ mạng xã hội là những yếu tố góp phần làm gia tăng tỷ lệ lo âu, trầm cảm ở nhóm đối tượng này. Tuy nhiên, việc tiếp cận dịch vụ chăm sóc tinh thần chuyên sâu vẫn còn hạn chế do rào cản về chi phí, thời gian, và nhận thức xã hội.
+Dự án AI Buddy được phát triển như một nền tảng ứng dụng web nhằm cung cấp các công cụ hỗ trợ sức khỏe tinh thần một cách thân thiện, tiện lợi và cá nhân hóa. Hệ thống tập trung vào ba chức năng chính: trò chuyện cảm xúc với AI, theo dõi cảm xúc hằng ngày, và thực hành thiền/tập trung thông qua các gói membership.
+
+II.	MỤC TIÊU
+Mục tiêu của nghiên cứu này là:
+-	Phân tích kiến trúc hệ thống của giao diện web “AI Buddy”.
+-	Mô tả chi tiết từng thành phần chức năng với góc nhìn trải nghiệm người dùng (UX).
+-	Đề xuất mô hình tổ chức thông tin và cấu trúc giao diện phù hợp với hành vi và nhu cầu người dùng mục tiêu (sinh viên, người đi làm).
+-	Xác định vai trò của từng trang trong hành trình trải nghiệm (user journey).
+
+III.	ĐỐI TƯỢNG NGƯỜI DÙNG
+Hệ thống “AI Buddy” hướng đến các đối tượng:
+-	Sinh viên: thường xuyên gặp áp lực thi cử, học nhóm, mất động lực học tập.
+-	Nhân viên văn phòng: dễ bị căng thẳng công việc, thiếu thời gian nghỉ ngơi, cần công cụ hỗ trợ cảm xúc nhanh và dễ sử dụng.
+→ Cả hai nhóm có đặc điểm hành vi sử dụng thiết bị di động thường xuyên, ưa chuộng giao diện tối giản, tốc độ truy cập nhanh và cá nhân hóa trải nghiệm.
+
+IV.	CẤU TRÚC VÀ CHỨC NĂNG WEBSITE
+Website AI Buddy được tổ chức thành 10 trang chức năng chính, với mỗi trang đóng vai trò cụ thể trong hành trình tương tác của người dùng (user journey). Bên cạnh đó, hệ thống được tích hợp cơ chế phân cấp tính năng theo mô hình dịch vụ freemium - một chiến lược quan trọng nhằm vừa tạo giá trị trải nghiệm cơ bản miễn phí, vừa tạo động lực nâng cấp lên các gói trả phí để mở khóa các chức năng cao cấp.
+1.	Trang chủ (Homepage)
+File: Prototype_Homepage.html
+Chức năng:
+-	Giới thiệu thương hiệu AI Buddy và mô hình hoạt động.
+-	Trình bày ba trụ cột chức năng: Chatbot cảm xúc, Ghi chú cảm xúc, Focus/Meditation.
+-	Nút Call to action “Start Chatting Now” giúp người dùng bắt đầu hành trình tương tác.
+Vai trò: Điều hướng đầu vào cho hành trình người dùng, đóng vai trò khởi điểm quan trọng trong trải nghiệm.
+
+
+2.	Chatbot cảm xúc (Chatbot Page)
+File: Prototype_Chatbot.html
+Chức năng:
+-	Mô phỏng hội thoại qua chatbot sử dụng xử lý ngôn ngữ tự nhiên (NLP).
+-	Người dùng chọn persona phù hợp với tâm trạng (bạn bè, giáo viên, bác sĩ...).
+-	Tùy chọn bật voice guidance với những lời nhắc nhẹ nhàng.
+Vai trò: Hỗ trợ cảm xúc tức thời, thay thế chức năng trò chuyện trị liệu đơn giản.
+ 
+
+3.	Ghi chép cảm xúc (Emotion Tracker)
+File: Prototype_EmotionTracker.html
+ Chức năng:
+-	Ghi nhận cảm xúc theo biểu tượng (emoji), viết reflection và gắn tag.
+-	Hiển thị biểu đồ cảm xúc 7 ngày.
+-	Gợi ý nâng cấp Premium để:
+    +	Truy cập phân tích cảm xúc nâng cao.
+    +	Mở khóa voice reflection session.
+Vai trò: Công cụ tự theo dõi và nhận thức cảm xúc cá nhân (emotional self-awareness tool).
+ 
+
+4.	Dùng thử (Trial Page)
+File: Prototype_Trial.html
+Chức năng:
+-	Tích hợp breathing animation và giọng nói hướng dẫn thiền.
+-	Phân cấp dịch vụ theo gói membership:
+Gói dịch vụ	Mức phí	Quyền lợi
+Free	Miễn phí	Chatbot, Emotion Tracker cơ bản, 2 session thiền
+Essential	Có phí	Mở 10 session Focus, voice cá nhân hóa cơ bản
+Premium	Có phí cao hơn	Tất cả session, voice persona, lịch nhắc nhở, phân tích nâng cao
+-	Nút "Mua Ngay" → chuyển đến trang Checkout để thanh toán.
+Vai trò: Là tính năng cốt lõi để thương mại hóa dịch vụ và tạo giá trị gia tăng.
+ 
+
+5.	Trang giỏ hàng (Cart Page)
+File: Prototype_Cart.html
+Chức năng chính:
+-	Hiển thị sản phẩm đã chọn (ví dụ: Premium 1 tháng / 12 tháng).
+-	Nút Remove sản phẩm.
+-	Tổng hợp đơn hàng và nút Checkout.
+Vai trò: Tăng minh bạch thông tin chi phí, hỗ trợ quyết định mua.
+ 
+
+6.	Trang thanh toán (Checkout Page)
+File: Prototype_Checkout.html
+Chức năng:
+-	Thu thập thông tin thanh toán: thẻ ngân hàng, địa chỉ người mua.
+-	Hiển thị thông tin gói đăng ký (Essential / Premium).
+-	Nút xác nhận thanh toán hoàn tất giao dịch.
+Đặc điểm: Không hiển thị trong menu điều hướng chính, chỉ xuất hiện khi người dùng chọn nâng cấp từ trang Focus.
+Vai trò: Là thành phần trung tâm trong mô hình kinh doanh freemium, tạo điều kiện cho chuyển đổi từ người dùng miễn phí sang trả phí (conversion funnel).
+ 
+
+7.	Trang cá nhân (Profile / Dashboard)
+File: Prototype_Profile.html
+ Chức năng:
+-	Hiển thị thông tin cá nhân, tài khoản, thiết lập ngôn ngữ, v.v và hoạt động gần nhất.
+-	Tổng hợp thống kê cảm xúc và hành vi sử dụng session Focus.
+-	Cung cấp hệ thống huy hiệu thành tựu (gamification) như: Calm Master, Chat Streak, Focus Hero.
+Vai trò: Củng cố trải nghiệm người dùng qua phản hồi tích cực, tăng mức độ gắn bó với hệ thống (user retention).
+ 
+
+8.	Giới thiệu (About Page)
+File: Prototype_About.html
+ Chức năng:
+-	Trình bày sứ mệnh: “Technology that heals, not harms”.
+-	Nêu rõ giá trị cốt lõi: đồng cảm, bảo mật, khoa học hành vi.
+-	Giới thiệu vai trò và thành viên nhóm phát triển.
+Vai trò: Tăng tính minh bạch và xây dựng lòng tin với người dùng (trust & transparency).
+ 
+ 
+9.	Liên hệ và hỗ trợ (Contact Page)
+File: Prototype_Contact.html
+ Chức năng:
+-	Cung cấp thông tin liên hệ chính thức (email, địa chỉ, số điện thoại).
+-	Biểu mẫu gửi phản hồi theo chủ đề (feedback, partnership…).
+ Vai trò: Đảm bảo hỗ trợ kỹ thuật và duy trì kết nối với cộng đồng người dùng.
+
+
+10.	Trang Đăng nhập (Sign In Page)
+File: Prototype_SignIn.html
+Chức năng chính:
+-	Form đăng nhập với email/password.
+-	Điều hướng đến đăng ký hoặc quên mật khẩu.
+Vai trò: Bảo vệ dữ liệu cá nhân và cá nhân hóa trải nghiệm.
+
+----HẾT----
+
+
