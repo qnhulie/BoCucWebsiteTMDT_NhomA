@@ -5,11 +5,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Buddy - Trial</title>
-</head>
+
+  <style>
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* Show the modal when it's targeted */
+    .modal-overlay:target {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      border: 2px solid #aaa;
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .modal-header h3 {
+      margin: 0;
+    }
+
+    .modal-close {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #888;
+    }
+
+    .modal-body {
+      padding: 15px 0;
+    }
+
+    .modal-footer {
+      text-align: right;
+    }
+
+    .cta-button {
+      padding: 10px 15px;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  </head>
 
 <body style="font-family:Arial; margin:0; background:#f9f9f9;">
 
-  <!-- Header -->
   <header
     style="display:flex; justify-content:space-between; align-items:center; padding:10px 30px; background-color:#ddd; border-bottom:2px solid #ccc;">
     <div style="font-weight:bold;">[LOGO AI BUDDY]</div>
@@ -42,7 +105,6 @@
 
   <main style="display:flex; gap:20px; margin:0 30px; align-items: stretch;">
 
-    <!-- Breathing animation -->
     <div style="flex:2; display:flex; flex-direction:column;">
       <div
         style="border:1px solid #aaa; padding:15px; text-align:center; background:#fff; flex:1; display:flex; flex-direction:column; justify-content:space-between;">
@@ -53,7 +115,6 @@
       </div>
     </div>
 
-    <!-- Buy Sessions -->
     <aside style="flex:1; display:flex; flex-direction:column; gap:15px;">
       <div style="border:1px solid #aaa; background:#fff; padding:15px; flex:1;">
         <h4>[Free Package]</h4>
@@ -68,10 +129,10 @@
           <li>10 sessions and background music</li>
           <li>Select multiple AI voice</li>
         </ul>
-        <a href="#">
+        <a href="#essential-popup">
           <button>View Package</button>
         </a>
-      </div>
+        </div>
       <div style="border:1px solid #aaa; background:#fff; padding:15px; flex:1;">
         <h4>[Premium Package]</h4>
         <ul>
@@ -79,16 +140,56 @@
           <li>Select multiple AI voice</li>
           <li>Automatic focus reminders</li>
         </ul>
-        <a href="#">
+        <a href="#premium-popup">
           <button>View Package</button>
         </a>
-      </div>
+        </div>
     </aside>
 
   </main>
 
+  <div id="essential-popup" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Essential Package</h3>
+        <a href="#" class="modal-close">&times;</a> </div>
+      <div class="modal-body">
+        <p><strong>Price: $4.99/month</strong></p>
+        <p>Includes all basic features plus:</p>
+        <ul>
+          <li>10 sessions and background music</li>
+          <li>Select multiple AI voice</li>
+          <li>Basic mood trend analysis</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="Prototype_Checkout.html" class="cta-button">Proceed to Checkout</a>
+      </div>
+    </div>
+  </div>
 
-  <!-- Footer -->
+  <div id="premium-popup" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Premium Package</h3>
+        <a href="#" class="modal-close">&times;</a>
+      </div>
+      <div class="modal-body">
+        <p><strong>Price: $9.99/month</strong> (or $79.99/year)</p>
+        <p>Includes all Essential features plus:</p>
+        <ul>
+          <li>30 diverse sessions</li>
+          <li>Select multiple AI voice</li>
+          <li>Automatic focus reminders</li>
+          <li>Analyze emotional trends</li>
+          <li>Compare weekly moods</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="Prototype_Checkout.html" class="cta-button">Proceed to Checkout</a>
+      </div>
+    </div>
+  </div>
   <footer style="margin-top:30px; background:#ddd; text-align:center; padding:10px;">
     [ &#169; 2025 AI Buddy. All rights reserved. | Group A Information | Contact ]
   </footer>
